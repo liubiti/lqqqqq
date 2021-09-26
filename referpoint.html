@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>无标题文档</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href="css/select.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+		<script type="text/javascript" src="js/select-ui.min.js"></script>
+		<script type="text/javascript" src="editor/kindeditor.js"></script>
+
+		<script type="text/javascript">
+			KE.show({
+				id: 'content7',
+				cssPath: './index.css'
+			});
+		</script>
+
+		<script type="text/javascript">
+			$(document).ready(function(e) {
+				$(".select1").uedSelect({
+					width: 345
+				});
+				$(".select2").uedSelect({
+					width: 167
+				});
+				$(".select3").uedSelect({
+					width: 100
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+
+		<div class="place">
+			<span>位置：</span>
+			<ul class="placeul">
+				<li>
+					<a href="#">首页</a>
+				</li>
+				<li>
+					<a href="#">学分查询</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="formbody">
+
+			<div id="tab2" class="tabson">
+
+				<ul class="seachform">
+
+					<li><label>学号</label><input name="" type="text" class="scinput" /></li>
+					<li><label>姓名</label><input name="" type="text" class="scinput" /></li>
+					<li><label>时间段<b>：</b></label>
+						<li><label>年</label>
+						<div class="vocation">
+							<select class="select3">
+								<option>2020</option>
+								<option>2019</option>
+								<option>2018</option>
+							</select>
+						</div>
+						</li>
+						<li><label>月</label>
+						<div class="vocation">
+							<select class="select3">
+								<option>01</option>
+								<option>02</option>
+								<option>03</option>
+								<option>04</option>
+								<option>05</option>
+								<option>06</option>
+								<option>07</option>
+								<option>08</option>
+								<option>09</option>
+								<option>10</option>
+								<option>11</option>
+								<option>12</option>
+							</select>
+						</div>
+						</li>
+					</li>
+					
+					
+
+					<li><label>&nbsp;</label><input name="" type="button" class="scbtn" value="查询" /></li>
+
+				</ul>
+
+				<table class="tablelist">
+					<thead>
+						<tr>
+							<th><input name="" type="checkbox" value="" checked="checked" /></th>
+							<th>姓名<i class="sort"><img src="images/px.gif" /></i></th>
+							<th>院系</th>
+							<th>专业</th>
+							<th>学分1</th>
+							<th>学分2</th>
+							<th>学分总和</th>
+							
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><input name="" type="checkbox" value="" /></td>
+							<td>刘倩倩</td>
+							<td>软件学院</td>
+							<td>软件工程</td>
+							<td>1.3</td>
+							<td>2.4</td>
+							<td>3.7</td>
+							
+						</tr>
+						
+						<tr>
+							<td><input name="" type="checkbox" value="" /></td>
+							<td>刘倩倩</td>
+							<td>软件学院</td>
+							<td>软件工程</td>
+							<td>1.3</td>
+							<td>2.4</td>
+							<td>3.7</td>
+							
+						</tr>
+						
+						<tr>
+							<td><input name="" type="checkbox" value="" /></td>
+							<td>刘倩倩</td>
+							<td>软件学院</td>
+							<td>软件工程</td>
+							<td>1.3</td>
+							<td>2.4</td>
+							<td>3.7</td>
+							
+						</tr>
+						
+						<tr>
+							<td><input name="" type="checkbox" value="" /></td>
+							<td>刘倩倩</td>
+							<td>软件学院</td>
+							<td>软件工程</td>
+							<td>1.3</td>
+							<td>2.4</td>
+							<td>3.7</td>
+							
+						</tr>
+						
+						<tr>
+							<td><input name="" type="checkbox" value="" /></td>
+							<td>刘倩倩</td>
+							<td>软件学院</td>
+							<td>软件工程</td>
+							<td>1.3</td>
+							<td>2.4</td>
+							<td>3.7</td>
+							
+						</tr>
+						
+						
+                    
+					</tbody>
+				</table>
+
+			</div>
+
+		</div>
+
+		<script type="text/javascript">
+			$("#usual1 ul").idTabs();
+		</script>
+
+		<script type="text/javascript">
+			$('.tablelist tbody tr:odd').addClass('odd');
+		</script>
+
+		</div>
+
+	</body>
+
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>无标题文档</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href="css/select.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+		<script type="text/javascript" src="js/select-ui.min.js"></script>
+		<script type="text/javascript" src="editor/kindeditor.js"></script>
+
+		<script type="text/javascript">
+			KE.show({
+				id: 'content7',
+				cssPath: './index.css'
+			});
+		</script>
+
+		<script type="text/javascript">
+			$(document).ready(function(e) {
+				$(".select1").uedSelect({
+					width: 345
+				});
+				$(".select2").uedSelect({
+					width: 167
+				});
+				$(".select3").uedSelect({
+					width: 100
+				});
+			});
+		</script>
+
+		<script>
+			function checkUsername() {
+				var uname = document.getElementById("username").value;
+				var unameTip = document.getElementById("usernameTip");
+				var reg = /^[\u4E00-\u9FA5AA-Za-z]{2，30}$/;
+				if(!reg.test(uname)) {
+					unameTip.innerHTML = "输入不合法！";
+					unameTip.style = "color:red";
+
+				} else {
+					unameTip.innerHTML = "";
+				}
+
+			}
+		</script>
+
+		<script>
+			function Username() {
+				var Uname = document.getElementById("Username").value;
+				var UnameTip = document.getElementById("UsernameTip");
+				var reg = /^[\u4E00-\u9FA5A]{2,6}$/;
+				if(!reg.test(Uname)) {
+					UnameTip.innerHTML = "输入不合法！";
+					UnameTip.style = "color:red";
+
+				} else {
+					UnameTip.innerHTML = "";
+				}
+
+			}
+		</script>
+		
+		<script>
+			function Name() {
+				var Name = document.getElementById("Name").value;
+				var NameTip = document.getElementById("NameTip");
+				var reg = /^[\u4E00-\u9FA5A]{2,6}$/;
+				if(!reg.test(Name)) {
+					NameTip.innerHTML = "输入不合法！";
+					NameTip.style = "color:red";
+
+				} else {
+					NameTip.innerHTML = "";
+				}
+
+			}
+		</script>
+		<script>
+			function ame() {
+				var ame = document.getElementById("ame").value;
+				var ameTip = document.getElementById("ameTip");
+				var reg = /^[\u4E00-\u9FA5A]{2,6}$/;
+				if(!reg.test(ame)) {
+					ameTip.innerHTML = "输入不合法！";
+					ameTip.style = "color:red";
+
+				} else {
+					ameTip.innerHTML = "";
+				}
+
+			}
+		</script>
+
+
+	</head>
+
+	<body>
+
+		<div class="place">
+			<span>位置：</span>
+			<ul class="placeul">
+				<li>
+					<a href="#">首页</a>
+				</li>
+				<li>
+					<a href="#">参赛信息录入</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="formbody">
+
+			<div id="tab1" class="tabson">
+				<ul class="forminfo">
+					<li><label>竞赛类型<b>*</b></label>
+
+						<div class="vocation">
+							<select class="select3">
+								<option>单人赛</option>
+								<option>组合赛</option>
+								<option>集体赛</option>
+							</select>
+						</div>
+					</li>
+<li>
+      <label>年度<b>*</b></label>
+      <input name="classid" type="text" class="dfinput"    style="width:345px;"/>
+    </li>
+    
+					<li>
+						<label>题目<b>*</b></label>
+						<input onblur="checkUsername()"  id="username" name="classid" type="text" class="dfinput" style="width:345px;" />
+						<i id="usernameTip"></i>
+					</li>
+					<li>
+						<label>组长<b>*</b></label>
+						<input onblur="Name()" id="Name" name="Classid" type="text" class="dfinput" style="width:345px;" />
+						<i id="NameTip"></i>
+					</li>
+					<li>
+						<label>组员<b>*</b></label>
+						<input onblur="ame()" id="ame" name="Classid" type="text" class="dfinput" style="width:345px;" />
+						<i id="ameTip"></i>
+					</li>
+					<li><label>获奖等级<b>*</b></label>
+						<div class="vocation">
+							<select class="select3">
+								<option>无</option>
+								<option>一等</option>
+								<option>二等</option>
+								<option>三等</option>
+								<option>优秀奖</option>
+								<option>特等</option>
+							</select>
+						</div>
+					</li>
+					<li>
+						<label>指导老师<b>*</b></label>
+						<input onblur="Username()" id="Username" name="Classid" type="text" class="dfinput" style="width:345px;" />
+						<i id="UsernameTip"></i>
+					</li>
+					
+
+					
+					<li><label>&nbsp;</label><input name="" type="button" class="btn" value="保存" /></li>
+				</ul>
+
+			</div>
+
+		</div>
+
+		<script type="text/javascript">
+			$("#usual1 ul").idTabs();
+		</script>
+
+		<script type="text/javascript">
+			$('.tablelist tbody tr:odd').addClass('odd');
+		</script>
+
+		</div>
+
+	</body>
+
+</html>
